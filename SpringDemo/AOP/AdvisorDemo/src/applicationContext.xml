@@ -24,6 +24,19 @@
 		</property>
 	</bean>
 
+<!--
+	<bean id="customerYiibaicut" 
+                class="org.springframework.aop.support.NameMatchMethodYiibaicut">
+		<property name="mappedName" value="printName" />
+	</bean>
+
+	<bean id="customerAdvisor" 
+                 class="org.springframework.aop.support.DefaultYiibaicutAdvisor">
+		<property name="pointcut" ref="customerYiibaicut" />
+		<property name="advice" ref="hijackAroundMethodBeanAdvice" />
+	</bean>
+-->
+
 	<!--<bean id="customerAdvisor"
 		class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
 		<property name="mappedName" value="printName" />
